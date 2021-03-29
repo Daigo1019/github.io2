@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.text {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.top header .logo {
+    position: relative;
+    width: 190px;
+    height: 60px;
+    background: url(../img/peace.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.top ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top li {
+    list-style: none;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+.top a {
+    text-decoration: none;
+    font-weight: 300px;
+    color: #0e0101;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top li:hover {
+    box-shadow: 0px 3px 8px 0px #747171;
+    transition: 0.3s;
+    transform: translateY(-2px);
+}    
+.top .migaco {
+    position: absolute;
+    background: url(../img/migaco.svg);
+    background-size: cover;
+    width: 200px;
+    height: 600px;
+    transform:rotate(30deg);
+    left:70%;
+}
+.top .kirei {
+    position: absolute;
+    font-weight: 300;
+    letter-spacing: 16px;
+    top: 24%;
+    left: 51%;
+}
+.top .engata {
+    padding: 90px;
+    position: absolute;
+    background:linear-gradient(70deg, rgba(255, 145, 72, 0.918), #ff9bffb0);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+    left: 10%;
+}
+.top .engata h2 {
+    position: absolute;
+    font-size: 21px;
+    left: 0;
+    font-weight: 900;
+}
+.merito{
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+}
+.merito .container {
+    background: rgb(75, 183, 255);
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+.merito .container .meritoBx {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
+}
+.merito .container .kakomu {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+}
+.merito .container .meritoBx img {
+    border-radius: 50%;
+    min-height: 240px;
+    max-width: 240px;
+    object-fit: cover;
+}
+.merito .container .meritoBx h2 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+.okyaku {
+    text-align: center;
+    position: relative;
+}
+.okyaku .ashi {
+   position: absolute;
+   top: 43%;
+   left: 5%;
+   width: 900px;
+}
+.okyaku .ashi2{
+    position: absolute;
+    top: 94.5%;
+}
+.okyaku .midashi {
+    padding: 30px 0;
+}
+.okyaku .contentBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    margin: 80px 0;
+    align-items: center;
+}
+.okyaku .contentBx .kansou {
+    background: rgb(75, 183, 255);
+    width: 50%;
+    padding: 100px;
+    background: url(../img/illust2.svg);
+    background-repeat: no-repeat;
+    
+}
+.okyaku .contentBx .aki {
+    line-height: 35px;
+}
+.okyaku .contentBx .name {
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: azure;
+    font-weight: 300;
+}
+.okyaku .contentBx .imG {
+    width: 50%;
+    text-align: center;
+    background: url(../img/illust1.svg);
+    background-repeat: no-repeat;
+}
+.okyaku .contentBx .kansou2 {
+    background: rgb(75, 183, 255);
+    width: 50%;
+    padding: 100px;
+    background: url(../img/illust2.svg);
+    background-repeat: no-repeat;
+    transform: scale(-1, 1);
+}
+.okyaku .contentBx .B{
+    transform: scale(-1, 1);
+}
+.okyaku .contentBx .hanten {
+    transform: scale(-1,1);
+}
+.services {
+    padding: 100px;
+    text-align: center;
+}
+.services .heading{
+    color: #111;
+}
+.services .text {
+    color: #111;
+}
+.services .container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+    margin-top: 60px;
+}
+.services .container2 .serviceBx {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    cursor: pointer;
+    background: #0e0101;
+    overflow: hidden;
+}
+.services .container2 .serviceBx img{
+    position: absolute;
+    object-fit: cover;
+    width: 550px;
+    height: 450px;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.services .container2 .serviceBx img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.services .container2 .serviceBx h2 {
+    position: absolute;
+    background: #0e0101;
+    width: 100%;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 3px;
+    top: 92%;
+    left: 0;
+}
+.acces {
+    padding: 100px 0;
+    padding-top: 300px;
+    margin-top: -300px;
+    background: rgb(75, 183, 255);
+}
+.acces .heading {
+    margin-bottom: 60px;
+}
+.acces .map {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0 10px;
+}
+.acces .map .google {
+    width: 50%;
+}
+.acces .map .jusyo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.acces .map .jusyo p {
+    text-align: left;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+.title {
+    text-align: center;
+    padding: 40px;
+}
+.title .heading {
+    color: #111;
+}
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.about .content {
+    width: 50%;
+    padding: 100px;
+    background: url(../img/kami.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.about .content .form .inputBx{
+    margin-bottom: 40px;
+}
+.about .content .form .inputBx input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.about .content .form .inputBx input::placeholder {
+    color: #fff;
+}
+.about .content .form .inputBx textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 0;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+}
+.about .content .form .inputBx textarea::placeholder {
+    color: #fff;
+}
+.about .form .inputBx input[type="submit"] {
+    width: 150px;
+    background: #fff;
+    color: #111;
+    font-weight: 400px;
+}
+.about .saiyou {
+    width: 50%;
+    position: relative;
+}
+.about .saiyou img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.saiyou .heading {
+    position: relative;
+    color: rgb(17, 17, 17);
+}
+.footer {
+    background: #4BA5FF;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+@media (max-width: 910px) {
+    .top  {
+        padding: 50px
+    }
+    .top header {
+        padding: 20px 50px;
+    }
+    .top header .logo {
+        width: 100px;
+        height: 30px;
+    }
+    .top header ul {
+        display: none;
+    }
+    .top .engata {
+        width: 200px;
+        height: 200px;
+        top: 75%;
+    }
+    .top .engata h2 {
+        font-size: 13px;
+    }
+    .top .migaco {
+        width: 100px;
+        height: 300px;
+    }
+    .top .kirei {
+        font-size: 15px;
+    }
+    .merito .container {
+        flex-direction: column;
+    }
+    .merito .container .meritoBx {
+        width: 100%;
+        margin: 10px 0;
+        padding: 30px;
+    }
+    .merito .container .kakomu {
+        border: none;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .okyaku .ashi,.ashi2 {
+        display: none;
+    }
+    .okyaku .imG img {
+        display: none !important;
+    }
+    .okyaku .kansou  {
+        width: 100% !important;
+    }
+    .services {
+        padding: 50px;
+    }
+    .services .container2 {
+        justify-content: space-around;
+    }
+    .services .container2 .serviceBx img{
+        width: 250px;
+        height: 400px;
+    }
+    .acces .map .jusyo p {
+        font-size: 21px;
+        line-height: 60px;
+    }
+    .acces .google {
+        max-width: 50%;
+    }
+    .acces iframe {
+        max-width: 100%;
+    }
+    .title {
+        padding: 20px;
+    }
+    .about .saiyou {
+        display: none;
+    }
+    .about .content {
+        width: 100%;
+    }
+}
